@@ -17,12 +17,14 @@
             <button id="popup"  class="btn btn-danger">Select</button>
         </div>
 
+        <p id="message">Board: 16x16</p>
+
         <div class="board"></div>
 
         <div class="footer">
-            <button class="btn btn-dark">Black</button>
-            <button class="btn btn-info">Random</button>
-            <button  class="btn btn-warning">Reset</button>
+            <button class="btn btn-dark" id="blackbtn" onclick="setColor('black')">Black</button>
+            <button class="btn btn-info" onclick="setColor('random')">Random</button>
+            <button  class="btn btn-warning" onclick="reset()">Reset</button>
         </div>
         
     </body>
